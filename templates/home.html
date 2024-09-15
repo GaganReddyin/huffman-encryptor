@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="shortcut icon" type="image/x-icon" href="home_icon.svg">
+        <!-- Linking Bootstrap -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- Linking Vanta.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            VANTA.GLOBE({
+                el: "#wrapper",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            })
+        });
+        </script>
+        <title>File Encrypter</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: 'Oswald', sans-serif;
+            }
+            #wrapper {
+                min-height: 100%;
+            }
+            .heading{
+                font-family: 'Kalam', cursive;
+                align-items: center;
+            }
+            .bton{
+                font-family: 'Kalam', cursive;
+                font-weight:600;
+                font-size: 18px;
+                background: rgb(243, 155, 200);
+                color: rgb(35, 0, 18);
+                border:transparent;
+                border-radius: 5px;
+                padding: 8px 25px;
+                transition: transform 0.5s;
+
+            }
+            .bton:hover{
+                font-weight:600;
+                cursor:pointer;
+                background:transparent;
+                color:white;
+                text-decoration:none;
+                transform: translateY(-8px);
+            }
+            .dwarf_button{
+                background: transparent;
+                border: transparent;
+                padding-left: 280px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: black; align-items: center; margin-top:-30px;">
+        <div style="color: white; text-align:left; border-color: white; border-radius: 15;" id="wrapper";>
+            <h1 style="font-size: 44px; font-weight:700; padding-top: 400px; padding-left: 280px;">FILE ENCRYPTION</h1><br>
+            <p class="heading" style="margin-top:-10px; padding-left: 400px;" >with</p>
+            <h1 style="color:#8919a0; font-weight:700; font-size: 64px; margin-top:-10px; padding-left: 190px;"><i>HUFFMAN CODING</i></h1><br>
+            <button class = "dwarf_button"></button>
+            <a href="/encrypt"><button class="bton">ENCRYPT</button></a>&#160;&#160;&#160;&#160;&#160;
+            <a href="/decrypt"><button class="bton">DECRYPT</button></a>
+        </div>
+    </body>
+</html>
