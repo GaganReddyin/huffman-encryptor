@@ -12,7 +12,7 @@
 
 ### Prerequisites
 
-- Python 3.x
+- Python 
 - Flask
 - HTML/CSS/JavaScript (for the frontend)
 
