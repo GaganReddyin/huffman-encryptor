@@ -1,5 +1,4 @@
-# huffman-encryptor
-# Huffman Encryptor
+# Huffman-Encryptor
 
 **Huffman Encryptor** is a tool that combines Huffman Encoding and robust encryption to securely compress and protect text-based files. it offers an intuitive interface for easy file selection and encryption.
 
