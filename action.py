@@ -1,7 +1,7 @@
 import os, time, glob
 from flask import Flask, redirect, url_for, request, render_template, send_file
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 global filename
 global filetype
